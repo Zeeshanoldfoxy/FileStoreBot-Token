@@ -7,7 +7,17 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
+/start - start the bot or get posts
 
+/batch - create link for more than one posts
+
+/genlink - create link for one post (admin only)
+
+/users - view  bot (admin only
+
+/broadcast - broadcast any messages to bot users (admin only)
+
+/stats - checking your bot uptime (admin ONLY)
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7374275705:AAFhab8F4C2AJ5V3fPh5woBzSa1HFsuW8To")
