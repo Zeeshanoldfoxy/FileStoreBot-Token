@@ -7,17 +7,29 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-/start - start the bot or get posts
 
-/batch - create link for more than one posts
+# Define the command for generating a link for one post (admin only)
+def genlink(update, context):
+    # Check if the user is an admin
+    if update.message.from_user.id not in ADMINS:
+        update.message.reply_text("You are not authorized to use this command.")
+        return
 
-/genlink - create link for one post (admin only)
+    # Generate the link for one post
+    # Add your logic here
 
-/users - view  bot (admin only
+# Create an Updater object with your bot token
+updater = Updater("7374275705:AAFhab8F4C2AJ5V3fPh5woBzSa1HFsuW8To", use_context=True)
 
-/broadcast - broadcast any messages to bot users (admin only)
+# Get the dispatcher to register handlers
+dispatcher = updater.dispatcher
 
-/stats - checking your bot uptime (admin ONLY)
+# Register the command handler for /genlink
+dispatcher.add_handler(CommandHandler("genlink", genlink))
+
+# Start the Bot
+updater.start_polling()
+updater.idle()
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7374275705:AAFhab8F4C2AJ5V3fPh5woBzSa1HFsuW8To")
