@@ -27,9 +27,9 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = "mongodb+srv://gullugulshan68:7vgssosE0wWnsYhc@gullu.smggwdv.mongodb.net/?retryWrites=true&w=majority&appName=Gullu"
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_NAME = os.environ.get("DATABASE_NAME", "darkfantasty.txt")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshort.url")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "9be5ff6c33377c09921d88189ba85a8dc1c72257“)
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
