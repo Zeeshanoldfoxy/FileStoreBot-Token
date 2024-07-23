@@ -27,7 +27,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = "mongodb+srv://gullugulshan68:7vgssosE0wWnsYhc@gullu.smggwdv.mongodb.net/?retryWrites=true&w=majority&appName=Gullu"
-DB_NAME = os.environ.get("DATABASE_NAME", "darkfantasty.txt")
+DB_NAME = os.environ.get("DATABASE_NAME", "gullugulshan68")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "9be5ff6c33377c09921d88189ba85a8dc1c72257“)
