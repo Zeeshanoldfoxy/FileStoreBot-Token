@@ -33,11 +33,11 @@ SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "9be5ff6c33377c09921d88189ba85a8dc1c72257“)
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","2206964164/123")
+TUT_VID = os.environ.get("TUT_VID","2177964427/169")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("1002206964164", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("1002206964164",""))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
